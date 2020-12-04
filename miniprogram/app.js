@@ -32,8 +32,19 @@ App({
         }
       }
     })
+    wx.cloud.init()
+    wx.cloud.callFunction({
+      // 云函数名称
+      name: 'getAll',
+      success: res=> {
+        this.globalData.restaurants =  res.result.data             
+        console.log(res.result.data)
+      },
+      fail: console.error
+    })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    restaurants:[]
   }
 })

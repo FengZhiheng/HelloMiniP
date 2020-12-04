@@ -1,0 +1,21 @@
+<!--miniprogram/set/set.wxml-->
+<!-- <text>miniprogram/set/set.wxml</text> -->
+
+<view class='container'>
+  <form bindsubmit='comfirm'>
+    <view class='title'>
+      <text>餐馆详情</text>
+    </view>
+
+    <view class='input-container'>      
+      <input style='display:none' data-value='{{id}}' name="id" value='{{restaurants._id}}'></input>
+      <textarea  data-value='{{note}}' name="note" value='{{restaurants.note}}'></textarea >      
+    </view>
+
+    <view class="label">例如：桃花源记（湖南菜）5F，不辣，很一般，不推荐</view>
+    
+    <view class='comfirm'>
+      <button form-type='submit'>保存</button>
+    </view>
+  </form>
+</view>

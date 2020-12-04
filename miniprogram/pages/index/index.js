@@ -50,5 +50,12 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  goToPage1:function(){
+    console.log("Hello world2")
+    //如何设置user motto的值？
+    this.setData({
+      motto: 'Hello World2',
+    })
   }
 })

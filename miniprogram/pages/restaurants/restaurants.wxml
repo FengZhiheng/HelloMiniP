@@ -1,0 +1,15 @@
+<view wx:if="{{restaurants}}" class='container'>
+  <block wx:for="{{restaurants}}" wx:key="id">
+    <view class='content'>
+      <text>{{item.note}}</text>            
+      <button class='del' data-id='{{item._id}}' bindtap='onDel'>删除</button>
+      <button class='update' data-id='{{item._id}}' bindtap='onUpdate'>修改</button>
+    </view>
+  </block>
+</view>
+<view wx:else="{{restaurants}}" class='none'>
+  <text>暂时没有餐馆！</text>
+</view>
+<view class='goBack'>
+  <button bindtap='goBack'>返回主界面</button>
+</view>

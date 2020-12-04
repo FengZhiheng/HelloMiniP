@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/OneButton/OneButton",
+    "pages/set/set",
+    "pages/restaurants/restaurants",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "What Where How",
+    "navigationBarTextStyle": "black"
+    
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "cloud": true
+  
+}

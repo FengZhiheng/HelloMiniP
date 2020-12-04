@@ -1,0 +1,48 @@
+.goBack {
+  position: fixed;
+  width: 750rpx;
+  height: 120rpx;
+  bottom: 0;  
+}
+
+.goBack button {  
+  border-radius: 14rpx 15rpx;
+  background-color: #1aad16;
+  color: #fff;
+  
+  width: 90%;
+  display:flex;
+  justify-content: center;
+  text-align:center;  
+}
+
+
+.content {
+  width: 750rpx;
+  display: inline-flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 10rpx;
+}
+
+.content text {
+  width: 10000rpx;
+  float: left;
+  border: 1rpx solid rgb(228, 222, 222);
+
+}
+
+.content button {  
+  font-size: 30rpx;
+  color: #fff;
+}
+
+.del {  
+  background-color: red;  
+}
+
+.update {  
+  background-color: #1aad16;  
+}
