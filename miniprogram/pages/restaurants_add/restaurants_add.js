@@ -37,6 +37,7 @@ Page({
     }
   },
   add: function(db, restaurant) {
+    
     db.collection("restaurants").add({
       data: {
         note: restaurant.note        
@@ -69,9 +70,6 @@ Page({
         wx.showToast({
           title: '修改记录成功',
         })        
-        // wx.navigateTo({
-        //   url: '../OneButton/OneButton',
-        // })
         wx.navigateBack({ //返回之后，请重新刷新
           delta: 1,
         })

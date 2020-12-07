@@ -1,7 +1,7 @@
 <view wx:if="{{restaurants}}" class='container'>
   <block wx:for="{{restaurants}}" wx:key="id">
     <view class='content'>
-      <text>{{item.note}}</text>            
+      <text>{{item.note}}</text>  <!-- item 是for循环里的每一行 -->                 
       <button class='del' data-id='{{item._id}}' bindtap='onDel'>删除</button>
       <button class='update' data-id='{{item._id}}' bindtap='onUpdate'>修改</button>
     </view>

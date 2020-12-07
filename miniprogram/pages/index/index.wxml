@@ -1,16 +1,17 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-    <button class='btn1' bindtap="goToPage1">测试Button1 </button>
-    <button class='btn1' bindtap="bindViewTap">测试Button2 </button>
-    
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+<!--pages/OneButton/OneButton.wxml-->
+
+
+
+<view>
+  <button class='btn1' bindtap="getWWH">WWH </button>
 </view>
+
+<text class="user-result">{{result}}</text>
+
+
+<view class='buttonGroup'>
+  <button bindtap='goAdd'>添加菜馆</button>  
+  <button bindtap='goCheck'>查看所有的菜馆</button>
+</view>
+
+

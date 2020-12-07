@@ -1,9 +1,8 @@
 {
   "pages": [
-    "pages/OneButton/OneButton",
-    "pages/set/set",
-    "pages/restaurants/restaurants",
     "pages/index/index",
+    "pages/restaurants_add/restaurants_add",
+    "pages/restaurants_list/restaurants_list",    
     "pages/logs/logs"
   ],
   "window": {
