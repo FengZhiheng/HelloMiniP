@@ -36,26 +36,36 @@ Page({
       this.update(db, restaurant) //修改记录
     }
   },
-  add: function(db, restaurant) {
+  add: function(db, restaurant) {   
     
+    if(restaurant.note == ""){
+      wx.showToast({
+        title: '内容为空',
+        icon: 'none',
+        duration: 2000
+      })
+      return
+    }
+
     db.collection("restaurants").add({
       data: {
         note: restaurant.note        
       },
       success: res => {
         wx.showToast({
-          title: '新增记录成功',
+          title: '新增记录成功',          
+          icon: 'success',
+          duration: 2000
         })
         wx.navigateBack({ //返回之后，请重新刷新
           delta: 1,
-        })
-        // wx.navigateTo({
-        //   url: '../OneButton/OneButton',
-        // })
+        })        
       },
       fail: err => {
         wx.showToast({
           title: '新增失败',
+          icon: 'none',
+          duration: 2000
         })
       }
     })
