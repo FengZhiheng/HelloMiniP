@@ -43,7 +43,7 @@ Page({
   onUpdate: function(e) {
     let id = e.currentTarget.dataset.id
     wx.navigateTo({
-      url: '../set/set?id=' + id,
+      url: '../restaurants_add/restaurants_add?id=' + id,
     })
     this.onLoad() //更新成功重新加载
   }

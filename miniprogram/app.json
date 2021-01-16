@@ -2,7 +2,7 @@
   "pages": [
     "pages/index/index",
     "pages/restaurants_add/restaurants_add",
-    "pages/restaurants_list/restaurants_list",    
+    "pages/restaurants_list/restaurants_list",
     "pages/logs/logs"
   ],
   "window": {
@@ -10,10 +10,8 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "What Where How",
     "navigationBarTextStyle": "black"
-    
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json",
   "cloud": true
-  
 }

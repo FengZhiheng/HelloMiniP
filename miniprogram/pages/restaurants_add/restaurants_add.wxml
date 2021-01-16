@@ -1,5 +1,5 @@
-<!--miniprogram/set/set.wxml-->
-<!-- <text>miniprogram/set/set.wxml</text> -->
+<!--miniprogram/restaurants_add/restaurants_add.wxml-->
+<!-- <text>miniprogram/restaurants_add/restaurants_add.wxml</text> -->
 
 <view class='container'>
   <form bindsubmit='comfirm'>
